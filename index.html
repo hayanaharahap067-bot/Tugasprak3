@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum Minggu 3 - Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ── NAVBAR ─────────────────────── -->
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <span class="logo-icon">&#9670;</span>
+      <span class="logo-text">Pau.dev</span>
+    </div>
+
+    <button id="dark-toggle" class="dark-btn">🌙 Dark Mode</button>
+
+    <ul class="navbar__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="navbar__cta">
+      <a href="#" class="btn-primary">Hire Me</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO SECTION ────────────────── -->
+<section class="hero" id="home">
+
+  <div class="hero__content">
+    <h1 class="hero__title">
+      Hi, saya <span class="highlight">paujiah hayana</span><br>
+      Web Developer
+    </h1>
+
+    <p class="hero__desc">
+      Berkomitmen menghadirkan solusi teknologi yang modern dan efektif.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#portfolio" class="btn-primary">Lihat Portfolio</a>
+      <a href="#contact" class="btn-outline">Hubungi Saya</a>
+    </div>
+  </div>
+
+  <!-- FOTO PROFIL -->
+  <div class="hero__image">
+  <div class="profile-ring">
+    <img src="images/9.jpeg" alt="Foto Profil" class="profile-photo">
+  </div>
+</div>
+
+</section>
+
+  <!-- ── SKILLS SECTION ──────────────── -->
+  <section class="skills" id="about">
+    <div class="container">
+      <h2 class="section-title">about me</h2>
+
+
+
+      <div class="skills__grid">
+
+        <div class="skill-card">
+          <h3>Halo, kenalan yuk!</h3>
+          <p>Nama saya paujiah hayana. Saya adalah mahasiswa prodi sistem informasi yang sedang bersemangat untuk terus belajar di dunia digital.  Di website ini saya membagikan apa yang sedang saya kerjakan dan pelajari saat ini </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Visi dan Dedikasi</h3>
+          <p>Bagi saya, mengerjakan hal ini bukan sekadar tugas, tapi cara saya untuk mengekspresikan ide dan membantu orang lain lewat karya yang saya buat. Meskipun masih pemula, saya percaya setiap proses adalah langkah untuk menjadi lebih baik.</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Hobi</h3>
+          <p>Kalau lagi tidak di depan laptop atau tidak sedang sibuk berkarya, saya biasanya menghabiskan waktu dengan berinteraksi di komunikasi digital selain itu saya shopping dan travelling</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTFOLIO SECTION ───────────────────── -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">My Portfolio</h2>
+      <p class="section-subtitle">Beberapa project yang pernah saya kerjakan</p>
+
+      <div class="portfolio__grid">
+
+        <!-- Project 1 -->
+        <div class="portfolio-card">
+          <div class="portfolio-card__content">
+            <h3>Diagram banyak produk skincare</h3>
+            <p>
+              membuat beberapa diagram seperti diagram bar chart, pie chart, histogram, dan ogive yang dikembangkan dalam Pyhton.
+            </p>
+            <div class="portfolio-card__tags">
+              <span>python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-card">
+          <div class="portfolio-card__content">
+            <h3>portfolio website</h3>
+            <p>
+              Website portofolio ini saya bangun sendiri pakai HTML dan CSS dengan konsep yang simpel tapi tetep rapi. Fokus utama saya adalah kenyamanan pengunjung saat melihat karya-karya saya, sekaligus jadi tempat buat ngenalin diri saya secara lebih profesional. 
+            </p>
+            <div class="portfolio-card__tags">
+              <span>python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-card">
+          <div class="portfolio-card__content">
+            <h3> Binary tree visualization </h3>
+            <p>
+              Binary tree project yang dikembangkan dalam python menggunakan konsep pegunungan
+            </p>
+            <div class="portfolio-card__tags">
+              <span>python </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT SECTION ───────────────────── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">contact</h2>
+      <p class="section-subtitle">
+        Saya selalu terbuka untuk diskusi menarik atau kolaborasi proyek baru.
+      </p>
+
+      <div class="contact__wrapper">
+
+        <section class="form-section">
+  <div class="form-container">
+    <input type="text" id="input-nama" placeholder="Nama lengkap" />
+    <input type="email" id="input-email" placeholder="Alamat email" />
+    <textarea id="input-pesan" placeholder="Pesan kamu..." rows="4"></textarea>
+    <button id="btn-kirim">Kirim Pesan</button>
+    <div id="form-feedback" class="feedback hidden"></div>
+  </div>
+</section>
+
+      <!-- Contact Info -->
+  <div class="contact__info">
+
+  <div class="contact__item">
+    <span class="contact__icon">✉️</span>
+    <div>
+      <p class="contact__label">Email</p>
+      <p>hayanaharahap067@email.com</p>
+    </div>
+  </div>
+
+  <div class="contact__socials">
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">WhatsApp</a>
+    <a href="#">TikTok</a>
+    <a href="#">GitHub</a>
+  </div>
+
+</div>
+</section>
+
+  <!-- ── FOOTER ──────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">&#9670; Pau.dev</span>
+        <p class="footer__copy">
+          &copy; 2025 paujiah hayana. Dibuat dengan HTML & CSS murni.
+        </p>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
