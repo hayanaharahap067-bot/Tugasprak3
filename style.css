@@ -786,3 +786,88 @@ section {
 .feedback.success { background: #DCFCE7; color: #16A34A; border: 1px solid #BBF7D0; }
 .hidden { display: none; }
 
+/* =================================
+   DARK MODE FULL BACKGROUND
+================================= */
+
+.dark-mode {
+  background-color: #0f172a !important;
+  color: #e5e7eb;
+}
+
+/* Navbar */
+.dark-mode .navbar{
+  background:#111827;
+  border-bottom:1px solid #1f2937;
+}
+
+/* Hero section */
+.dark-mode .hero{
+  background:#0f172a;
+}
+
+/* Skills card */
+.dark-mode .skill-card{
+  background:#1f2937;
+  border-color:#374151;
+}
+
+/* Portfolio card */
+.dark-mode .portfolio-card{
+  background:#1f2937;
+  border-color:#374151;
+}
+
+/* Portfolio tag */
+.dark-mode .portfolio-card__tags span{
+  background:#374151;
+  color:#e5e7eb;
+}
+
+/* Contact area */
+.dark-mode .contact__info{
+  background:transparent;
+}
+
+/* Social buttons */
+.dark-mode .contact__socials a{
+  background:#1f2937;
+  color:#e5e7eb;
+}
+
+/* Form input */
+.dark-mode input,
+.dark-mode textarea{
+  background:#111827;
+  border-color:#374151;
+  color:#e5e7eb;
+}
+
+/* Tombol kirim */
+.dark-mode #btn-kirim{
+  background:#2563eb;
+  color:white;
+}
+
+/* Footer */
+.dark-mode .footer{
+  background:#111827;
+  border-top:1px solid #1f2937;
+}
+
+/* Text color fix */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a{
+  color:#e5e7eb;
+}
+/* Hilangkan nebula saat dark mode */
+.dark-mode::after{
+  background: radial-gradient(
+    ellipse at center,
+    #0f172a 0%,
+    #020617 70%
+  );
+}
